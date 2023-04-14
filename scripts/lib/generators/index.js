@@ -119,8 +119,8 @@ module.exports = function (hexo) {
     )
     apiData = statistic.addStatistics(apiData)
 
-    const search = new SearchGenerator(posts.data)
-    apiData = search.addSearchIndex(apiData)
+    // const search = new SearchGenerator(posts.data)
+    // apiData = search.addSearchIndex(apiData)
 
     return apiData
   }

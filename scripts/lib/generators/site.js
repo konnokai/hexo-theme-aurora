@@ -5,7 +5,7 @@ class SiteGenerator {
 
   constructor(configs) {
     configs.theme_config.version = pack.version
-    // 要設定成 null 避免洩漏資訊，不然預設會把整個 _config.yml 給塞進去 site/json 裡面 ==
+    // 要設定成 null 避免洩漏資訊，不然預設會把整個 _config.yml 給塞進去 site.json 裡面 ==
     configs.admin = null
     configs.server = null
     this.data = configs

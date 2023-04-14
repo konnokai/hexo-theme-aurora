@@ -95,7 +95,6 @@ import { computed, defineComponent, onMounted, onUnmounted, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useNavigatorStore } from '@/stores/navigator'
 import { useRouter } from 'vue-router'
-import { useSearchStore } from '@/stores/search'
 import { useCommonStore } from '@/stores/common'
 
 export default defineComponent({
@@ -105,7 +104,6 @@ export default defineComponent({
     const commonStore = useCommonStore()
     const { t } = useI18n()
     const navigatorStore = useNavigatorStore()
-    const searchStore = useSearchStore()
     const router = useRouter()
 
     const progress = ref(0)
@@ -176,11 +174,6 @@ export default defineComponent({
       router.push('/')
     }
 
-    const handleSearch = () => {
-      navigatorStore.setOpenNavigator(false)
-      searchStore.setOpenModal(true)
-    }
-
     onMounted(() => {
       document.addEventListener('scroll', scrollHandler)
     })
@@ -203,7 +196,6 @@ export default defineComponent({
       handleBackToTop,
       handleOpenMenu,
       handleGoHome,
-      handleSearch,
       scrolling,
       t
     }

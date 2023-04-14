@@ -60,7 +60,7 @@
       </div>
       <div class="col-span-1">
         <Sidebar>
-          <Profile author="blog-author" />
+          <Profile :author="mainAuthor" />
           <Toc :toc="post.toc" />
         </Sidebar>
       </div>
@@ -77,6 +77,7 @@ import {
   toRefs,
   watch
 } from 'vue'
+import { useAppStore } from '@/stores/app'
 import { useI18n } from 'vue-i18n'
 import { Sidebar, Toc, Profile } from '@/components/Sidebar'
 import { useCommonStore } from '@/stores/common'
@@ -97,6 +98,7 @@ export default defineComponent({
     }
   },
   setup(props) {
+    const appStore = useAppStore()
     const commonStore = useCommonStore()
     const { t } = useI18n()
     const post = toRefs(props).post
@@ -123,7 +125,11 @@ export default defineComponent({
         if (title.value !== '') return title.value
         return post.value.title
       }),
-      t
+      t,
+      mainAuthor: computed(() => {
+        let author = appStore.themeConfig.site.author.toLocaleLowerCase()
+        return author.replace(/[\s]+/g, '-')
+      })
     }
   }
 })
