@@ -14,7 +14,7 @@ site:
   nick: Auroral UI
   description:
   link: '/'
-  language: en
+  language: cn
   multi_language: true
   logo: https://img-blog.csdnimg.cn/20210313122054101.png
   avatar: https://img-blog.csdnimg.cn/20210313122054101.png
@@ -53,8 +53,8 @@ menu:
 #! @docs https://aurora.tridiamond.tech/guide/theme.html
 #! ---------------------------------------------------------------
 theme:
-  dark_mode: true
-  profile_shape: diamond # support `circle`, `diamond`, `rounded`
+  dark_mode: auto
+  profile_shape: circle # support `circle`, `diamond`, `rounded`
   feature: true
   gradient:
     color_1: '#24c6dc'
@@ -88,7 +88,7 @@ socials:
 #! @docs https://aurora.tridiamond.tech/guide/theme.html
 #! ---------------------------------------------------------------
 site_meta:
-  cdn: cn
+  cdn: en
   favicon:
   description: ''
   keywords: ''
@@ -101,7 +101,7 @@ site_meta:
 
 # For local development only!
 gitalk:
-  enable: true
+  enable: false
   autoExpand: true
   clientID: ''
   clientSecret: ''
@@ -111,7 +111,7 @@ gitalk:
   id: uid
   language: en
   distractionFreeMode: true
-  recentComment: true
+  recentComment: false
   proxy: ''
 
 # Valine comment plugin (recommended!)
@@ -128,7 +128,7 @@ valine:
   meta: ['nick', 'mail']
   requiredFields: []
   admin: 'TriDiamond'
-  recentComment: true
+  recentComment: false
 
 # Enable Busuanzi statistic plugin
 # see http://ibruce.info/2015/04/04/busuanzi/
@@ -136,15 +136,15 @@ busuanzi:
   enable: true
 
 copy_protection:
-  enable: true
+  enable: false
   author:
     cn: 作者
     en: Author
   link:
-    cn: 本文来自于
+    cn: 本文章來自
     en: Article is from
   license:
-    cn: 博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议
+    cn: Blog內容遵循 署名-非商業性使用-相同方式共享 4.0 國際 (CC BY-NC-SA 4.0) 協議
     en: This content is shared under the CC BY-NC-SA 4.0 protocol (Non-Commercial)
 
 #! ---------------------------------------------------------------
@@ -163,4 +163,5 @@ aurora_bot:
 #! ---------------------------------------------------------------
 injects:
   scripts:
+    - <script src="https://kit.fontawesome.com/5574ab9bcb.js" crossorigin="anonymous"></script>
   css:
