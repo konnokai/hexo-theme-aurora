@@ -8,6 +8,7 @@ class SiteGenerator {
     // 要設定成 null 避免洩漏資訊，不然預設會把整個 _config.yml 給塞進去 site.json 裡面 ==
     configs.admin = null
     configs.server = null
+    configs.deploy = null
     this.data = configs
   }
 
