@@ -1,15 +1,7 @@
 <template>
   <div>
     <Breadcrumbs :current="pageTitle" />
-    <PageContainer :post="pageData" :title="pageTitle">
-      <div id="comments">
-        <Comment
-          :title="pageData.title"
-          :body="pageData.text"
-          :uid="pageData.uid"
-        />
-      </div>
-    </PageContainer>
+    <PageContainer :post="pageData" :title="pageTitle"></PageContainer>
   </div>
 </template>
 
@@ -23,11 +15,10 @@ import { useAppStore } from '@/stores/app'
 import { useMetaStore } from '@/stores/meta'
 import PageContainer from '@/components/PageContainer.vue'
 import Breadcrumbs from '@/components/Breadcrumbs.vue'
-import Comment from '@/components/Comment.vue'
 
 export default defineComponent({
   name: 'Page',
-  components: { PageContainer, Breadcrumbs, Comment },
+  components: { PageContainer, Breadcrumbs },
   setup() {
     const articleStore = useArticleStore()
     const appStore = useAppStore()
