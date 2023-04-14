@@ -19,7 +19,6 @@ const TagGenerator = require('./tag')
 const PostGenerator = require('./post')
 const PageGenerator = require('./page')
 const StatisticGenerator = require('./statistic')
-const SearchGenerator = require('./search')
 
 module.exports = function (hexo) {
   let apiData = []
