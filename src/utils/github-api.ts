@@ -303,7 +303,7 @@ export class GithubComment {
   transformTime(lang: 'en' | 'cn'): void {
     const templates = {
       en: 'commented [TIME]',
-      cn: '[TIME]评论了'
+      cn: '[TIME]評論了'
     }
 
     this.created_at = formatTime(this.created_at, {

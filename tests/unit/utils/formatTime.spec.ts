@@ -18,7 +18,7 @@ describe('Utils: formatTime', () => {
   })
 
   it('just now - cn', () => {
-    expect(formatTime(+new Date() - 1, { lang: 'cn' })).toBe('刚刚')
+    expect(formatTime(+new Date() - 1, { lang: 'cn' })).toBe('剛剛')
   })
 
   it('two minutes ago - en', () => {
@@ -27,7 +27,7 @@ describe('Utils: formatTime', () => {
 
   it('two minutes ago - cn', () => {
     expect(formatTime(+new Date() - 60 * 2 * 1000, { lang: 'cn' })).toBe(
-      '2分钟前'
+      '2分鐘前'
     )
   })
 
@@ -37,7 +37,7 @@ describe('Utils: formatTime', () => {
 
   it('two hours ago - cn', () => {
     expect(formatTime(+new Date() - 3600 * 2 * 1000, { lang: 'cn' })).toBe(
-      '2小时前'
+      '2小時前'
     )
   })
 
@@ -60,7 +60,7 @@ describe('Utils: formatTime', () => {
   it('two months ago - cn', () => {
     expect(
       formatTime(+new Date() - 3600 * 24 * 30 * 2 * 1000, { lang: 'cn' })
-    ).toBe('2个月前')
+    ).toBe('2個月前')
   })
 
   it('two years ago - en', () => {

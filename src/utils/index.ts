@@ -19,11 +19,11 @@ export function formatTime(
       years: ' years ago'
     },
     cn: {
-      seconds: '刚刚',
-      minutes: '分钟前',
-      hours: '小时前',
+      seconds: '剛剛',
+      minutes: '分鐘前',
+      hours: '小時前',
       days: '天前',
-      months: '个月前',
+      months: '個月前',
       years: '年前'
     }
   }
