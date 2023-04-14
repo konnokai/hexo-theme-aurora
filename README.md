@@ -12,7 +12,7 @@
 Aurora is a next generation theme using Aurora colours and UI elements. It give you the feel of smooth flow of colours and a futuristic feeling.
 
 > This theme can be installed by using NPM or Yarn since version 1.1.0+, please check the [usage document](https://aurora.tridiamond.tech) for more details.
-`
+
 <br/>
 
 ![](https://img-blog.csdnimg.cn/202103280030531.png)
