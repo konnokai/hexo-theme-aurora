@@ -49,6 +49,12 @@
                   Aurora v{{ themeConfig.version }}
                 </b>
               </a>
+              & Modify by
+              <a href="https://github.com/konnokai">
+                <b class="font-extrabold border-b-2 border-ob hover:text-ob">
+                  孤之界
+                </b>
+              </a>
               .
             </li>
           </ul>
