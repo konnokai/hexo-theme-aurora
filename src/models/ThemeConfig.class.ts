@@ -87,14 +87,6 @@ export class ThemeMenu implements ObMenu {
    */
   constructor(raw?: GeneralOptions) {
     const extract: GeneralOptions = {
-      About: {
-        name: 'About',
-        path: '/about',
-        i18n: {
-          cn: '關於',
-          en: 'About'
-        }
-      },
       Archives: {
         name: 'Archives',
         path: '/archives',
@@ -109,6 +101,14 @@ export class ThemeMenu implements ObMenu {
         i18n: {
           cn: '標籤',
           en: 'Tags'
+        }
+      },
+      About: {
+        name: 'About',
+        path: '/about',
+        i18n: {
+          cn: '關於',
+          en: 'About'
         }
       }
     }
