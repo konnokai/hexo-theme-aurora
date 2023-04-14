@@ -51,57 +51,6 @@
               </a>
               .
             </li>
-            <li
-              v-if="
-                themeConfig.site.beian.number !== '' ||
-                themeConfig.site.police_beian.number !== ''
-              "
-              class="flex flex-row gap-3"
-            >
-              <span v-if="themeConfig.site.police_beian.number !== ''">
-                <img
-                  class="inline-block"
-                  :src="require('@/assets/gongan-beian-40-40.png')"
-                  alt=""
-                  width="15"
-                />
-                <b>
-                  公安备案信息：
-                  <a :href="themeConfig.site.police_beian.link">
-                    <b
-                      class="font-extrabold border-b-2 border-ob hover:text-ob"
-                    >
-                      {{ themeConfig.site.police_beian.number }}
-                    </b>
-                  </a>
-                </b>
-              </span>
-              <span v-if="themeConfig.site.beian.number !== ''">
-                备案信息：
-                <a :href="themeConfig.site.beian.link">
-                  <b class="font-extrabold border-b-2 border-ob hover:text-ob">
-                    {{ themeConfig.site.beian.number }}
-                  </b>
-                </a>
-              </span>
-            </li>
-          </ul>
-          <ul v-if="themeConfig.plugins.busuanzi.enable">
-            <li>
-              <span id="busuanzi_container_site_pv">
-                <svg-icon icon-class="eye" class="mr-1 text-lg inline-block" />
-                <span id="busuanzi_value_site_pv" />
-              </span>
-            </li>
-            <li>
-              <span id="busuanzi_container_site_uv">
-                <svg-icon
-                  icon-class="people"
-                  class="mr-1 text-lg inline-block"
-                />
-                <span id="busuanzi_value_site_uv"></span>
-              </span>
-            </li>
           </ul>
         </div>
         <div

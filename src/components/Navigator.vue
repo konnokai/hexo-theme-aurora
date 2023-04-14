@@ -85,18 +85,6 @@
           {{ t('settings.tips-back-to-home') }}
         </span>
       </li>
-      <li
-        id="Ob-Navigator-search"
-        :style="gradient"
-        @click.stop.prevent="handleSearch"
-      >
-        <div>
-          <svg-icon class="text-ob-bright stroke-current" icon-class="search" />
-        </div>
-        <span class="Ob-Navigator-tips">
-          {{ t('settings.tips-open-search') }}
-        </span>
-      </li>
     </ul>
   </div>
 </template>

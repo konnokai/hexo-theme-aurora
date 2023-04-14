@@ -189,11 +189,6 @@
             <Article :data="post.next_post" />
           </div>
         </div>
-        <template v-if="post.title && post.text && post.uid">
-          <div id="comments">
-            <Comment :title="post.title" :body="post.text" :uid="post.uid" />
-          </div>
-        </template>
       </div>
       <div>
         <Sidebar>
@@ -220,7 +215,6 @@ import {
 } from 'vue'
 import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
-import Comment from '@/components/Comment.vue'
 import { SubTitle } from '@/components/Title'
 import { Article } from '@/components/ArticleCard'
 
@@ -233,7 +227,7 @@ declare const Prism: any
 
 export default defineComponent({
   name: 'ObPost',
-  components: { Sidebar, Toc, Comment, SubTitle, Article, Profile },
+  components: { Sidebar, Toc, SubTitle, Article, Profile },
   setup() {
     const metaStore = useMetaStore()
     const postStore = usePostStore()

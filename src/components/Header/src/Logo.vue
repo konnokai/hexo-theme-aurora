@@ -21,11 +21,6 @@
         {{ themeConfig.site.nick || 'BLOG' }}
       </span>
     </div>
-    <img
-      class="logo-image"
-      :src="themeConfig.site.logo || themeConfig.site.avatar"
-      alt="site-logo"
-    />
   </div>
 </template>
 
@@ -51,15 +46,3 @@ export default defineComponent({
   }
 })
 </script>
-
-<style lang="scss" scoped>
-.logo-image {
-  height: 200px;
-  width: 200px;
-  max-width: 200px;
-  top: -60px;
-  left: -60px;
-  opacity: 0.05;
-  @apply absolute mr-2 rounded-full;
-}
-</style>

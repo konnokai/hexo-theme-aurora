@@ -4,13 +4,6 @@
     @keydown.k="handleOpenModal(true)"
     tabindex="0"
   >
-    <span
-      class="ob-drop-shadow"
-      data-dia="search"
-      @click="handleOpenModal(true)"
-    >
-      <svg-icon icon-class="search" />
-    </span>
     <Dropdown v-if="enableMultiLanguage" @command="handleClick">
       <span class="ob-drop-shadow" data-dia="language">
         <svg-icon icon-class="globe" />
@@ -36,7 +29,6 @@ import { computed, defineComponent } from 'vue'
 import { Dropdown, DropdownMenu, DropdownItem } from '@/components/Dropdown'
 import { useAppStore } from '@/stores/app'
 import ThemeToggle from '@/components/ToggleSwitch/ThemeToggle.vue'
-import SearchModal from '@/components/SearchModal.vue'
 import { useSearchStore } from '@/stores/search'
 
 export default defineComponent({
@@ -45,8 +37,7 @@ export default defineComponent({
     Dropdown,
     DropdownMenu,
     DropdownItem,
-    ThemeToggle,
-    SearchModal
+    ThemeToggle
   },
   setup() {
     const appStore = useAppStore()
@@ -95,33 +86,6 @@ export default defineComponent({
       width: 2rem;
       margin-right: 0.5rem;
       pointer-events: none;
-    }
-  }
-  .search-bar {
-    @apply bg-transparent flex flex-row px-0 mr-2 rounded-full;
-    opacity: 0;
-    width: 0;
-    transition: 300ms all ease-out;
-    &.active {
-      @apply bg-ob-deep-800;
-      opacity: 0.95;
-      width: 200px;
-      imput {
-        width: initial;
-      }
-    }
-    &:focus {
-      appearance: none;
-      outline: none;
-    }
-    input {
-      @apply flex flex-1 bg-transparent text-ob-normal px-6 box-border;
-      width: 0;
-      appearance: none;
-      outline: none;
-    }
-    svg {
-      @apply float-right;
     }
   }
 }

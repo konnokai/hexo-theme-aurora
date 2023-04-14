@@ -38,7 +38,6 @@
         <Sidebar>
           <CategoryBox />
           <TagBox />
-          <RecentComment />
         </Sidebar>
       </div>
     </div>
@@ -55,12 +54,7 @@ import {
   watch
 } from 'vue'
 import { useI18n } from 'vue-i18n'
-import {
-  Sidebar,
-  RecentComment,
-  TagBox,
-  CategoryBox
-} from '@/components/Sidebar'
+import { Sidebar, TagBox, CategoryBox } from '@/components/Sidebar'
 import Breadcrumbs from '@/components/Breadcrumbs.vue'
 import Paginator from '@/components/Paginator.vue'
 import { Article } from '@/components/ArticleCard'
@@ -74,7 +68,6 @@ export default defineComponent({
   components: {
     Breadcrumbs,
     Sidebar,
-    RecentComment,
     TagBox,
     Paginator,
     Article,
