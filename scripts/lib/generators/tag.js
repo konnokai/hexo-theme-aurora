@@ -11,6 +11,8 @@ class TagGenerator {
   configs = {}
 
   constructor(tags, posts, configs) {
+    if (tags.length <= 0) return
+
     this.data = tags
     this.posts = posts
     this.configs = configs
