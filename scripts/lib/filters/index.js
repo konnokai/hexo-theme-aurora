@@ -12,8 +12,8 @@ const QUOTE_LANG = {
   cn: {
     tip: '提示',
     warning: '注意',
-    danger: '特别注意',
-    details: '隐藏内容'
+    danger: '危險!',
+    details: '隱藏內容'
   }
 }
 const SVG = {
