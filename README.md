@@ -27,14 +27,12 @@ Aurora is a next generation theme using Aurora colours and UI elements. It give 
 
 - Featured section - _Can add a feature meta to any post, those will be pinned into the feature section on the home page._
 - Multi-language support - _Can dynamically switch the language of the main texts in the application._
+- Support Chinese (Traditional) - _Change Chinese (Simplified) to Chinese (Traditional)_
+- Support abstracts front-meta - _See [#208](https://github.com/auroral-ui/hexo-theme-aurora/pull/208)_
 - Statistics - _Statistic of article words, posts, categories and tags counts._
 - Article reading time - _Show the estimated reading time of an article._
 - Mathjax support - _Support mathjax syntax in markdown files._
 - SPA - _No page loading or freezing from page to page._
-- Comment plugins - _Support the using Gitalk or Valine plugins_
-- Comment plugins - _Support the using Gitalk or Valine plugins_
-- Blog search - _Enable to search all the articles in the blog._
-- Latest comments - _Added a widget showing the latest comments, supported using `Gitalk` or `Valine`._
 
 ### 🎨 Theme
 
@@ -45,15 +43,16 @@ Aurora is a next generation theme using Aurora colours and UI elements. It give 
 
 ### 🔧 Configuration
 
-- Beian Config - _This feature is especially for China users, for those that need to put Beian info at the footer of the blog._
 - Customizable menu - _Can customize your menu with internal links, external links, custom pages._
 - Post navigation - _Can navigate to the previous and next article at the end of the article page._
 - Custom pages - _Can add any custom pages, need to use the customized menu to display in the menu._
 - Page navbar - _Can set up a sidebar on the specific page, act as the sub-menu of the page._
 
-### 🛠 Build
+### 🛠 Build & Deploy
 
-- install node 16.20.0
-- install yarn
-- run `yarn install`
-- run `yarn run serve`
+- Install node 16.20.0
+- Install yarn
+- Run `yarn install`
+- Edit your code or just build
+- Run `yarn run build`
+- Replace `layout`, `scripts` and `source` folder to `hexo/node_modules/hexo-theme-aurora`
