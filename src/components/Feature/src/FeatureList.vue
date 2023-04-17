@@ -30,7 +30,7 @@
         <h2 class="text-3xl pb-8 lg:pb-16">
           <p :style="gradientText">EDITOR'S SELECTION</p>
           <span class="relative text-2xl text-ob-bright font-semibold">
-            <svg-icon class="inline-block" icon-class="hot" />
+            <svg-icon class="inline-block" icon-class="like" />
             {{ t('home.recommended') }}
           </span>
         </h2>

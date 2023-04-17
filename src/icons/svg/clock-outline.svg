@@ -1,8 +1,19 @@
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-reactroot="">
-<path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="" fill="none" d="M12 22C16.9706 22 21 17.9706 21 13C21 8.02944 16.9706 4 12 4C7.02944 4 3 8.02944 3 13C3 17.9706 7.02944 22 12 22Z"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M18.6699 2L21.9999 5.33"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" stroke="" d="M2 5.33L5.33 2"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="" d="M13 13H17"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="" d="M12 7V12"></path>
-<path stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="" fill="none" d="M12 14C12.5523 14 13 13.5523 13 13C13 12.4477 12.5523 12 12 12C11.4477 12 11 12.4477 11 13C11 13.5523 11.4477 14 12 14Z"></path>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="800px" height="800px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <title>clock [#1315]</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+
+</defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dribbble-Light-Preview" transform="translate(-340.000000, -2319.000000)" fill="#ffffff">
+            <g id="icons" transform="translate(56.000000, 160.000000)">
+                <path d="M302,2169 C302,2164.589 298.411,2161 294,2161 C289.589,2161 286,2164.589 286,2169 C286,2173.411 289.589,2177 294,2177 C298.411,2177 302,2173.411 302,2169 M304,2169 C304,2174.523 299.523,2179 294,2179 C288.477,2179 284,2174.523 284,2169 C284,2163.477 288.477,2159 294,2159 C299.523,2159 304,2163.477 304,2169 M300,2170 C300,2170.552 299.552,2171 299,2171 L295,2171 C293.895,2171 293,2170.105 293,2169 L293,2164 C293,2163.448 293.448,2163 294,2163 C294.552,2163 295,2163.448 295,2164 L295,2168 C295,2168.55 295.45,2169 296,2169 L299,2169 C299.552,2169 300,2169.448 300,2170" id="clock-[#1315]">
+
+</path>
+            </g>
+        </g>
+    </g>
 </svg>

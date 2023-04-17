@@ -8,7 +8,7 @@
     </span>
     <span v-else-if="post.feature" class="article-tag">
       <b>
-        <svg-icon icon-class="hot" />
+        <svg-icon icon-class="like" />
         {{ t('settings.featured') }}
       </b>
     </span>
