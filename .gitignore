@@ -32,3 +32,4 @@ pnpm-debug.log*
 
 source/
 layout/
+public/api/

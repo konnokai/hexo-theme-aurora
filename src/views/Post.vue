@@ -90,6 +90,13 @@
             v-if="post.count_time.symbolsTime && post.date"
           >
             <span>
+              <svg-icon icon-class="setting" style="stroke: white" />
+              <span class="pl-2 opacity-70">
+                {{ t('settings.updated-on') }} {{ post.updated.year }},
+                {{ t(post.updated.month) }} {{ post.updated.day }}
+              </span>
+            </span>
+            <span>
               <svg-icon icon-class="clock-outline" style="stroke: white" />
               <span class="pl-2 opacity-70">
                 {{ post.count_time.symbolsTime }}

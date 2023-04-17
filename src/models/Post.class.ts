@@ -22,7 +22,7 @@ export class NavPost {
     if (raw) {
       for (const key of Object.keys(this)) {
         if (Object.prototype.hasOwnProperty.call(raw, key)) {
-          if (key === 'date') {
+          if (key === 'date' || key === 'updated') {
             const m = new Date(raw[key] as string)
 
             const translateMonth = `settings.months[${m.getMonth()}]`
@@ -50,7 +50,11 @@ export class Post {
     day: 0,
     year: 0
   }
-  updated = ''
+  updated: { month: string; day: number; year: number } = {
+    month: '',
+    day: 0,
+    year: 0
+  }
   comments = false
   path = ''
   excerpt: string | null = null
@@ -102,7 +106,7 @@ export class Post {
               [key]: new NavPost(raw[key] as { [key: string]: any })
             })
           } else {
-            if (key === 'date') {
+            if (key === 'date' || key === 'updated') {
               const m = new Date(raw[key] as string)
 
               const translateMonth = `settings.months[${m.getMonth()}]`

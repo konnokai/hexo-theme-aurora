@@ -3,7 +3,7 @@ import { Post } from '@/models/Post.class'
 export interface Detail {
   title: string
   date: { month: string; day: number; year: number }
-  updated: string
+  updated: { month: string; day: number; year: number }
   comments: boolean
   path: string
   covers: string | null
@@ -19,7 +19,11 @@ export class Article extends Post implements Detail {
     day: 0,
     year: 0
   }
-  updated = ''
+  updated: { month: string; day: number; year: number } = {
+    month: '',
+    day: 0,
+    year: 0
+  }
   comments = false
   path = ''
   covers: string | null = null
@@ -47,7 +51,11 @@ export class Page implements Detail {
     day: 0,
     year: 0
   }
-  updated = ''
+  updated = {
+    month: '',
+    day: 0,
+    year: 0
+  }
   comments = false
   path = ''
   covers: string | null = null
@@ -60,7 +68,7 @@ export class Page implements Detail {
     if (raw) {
       for (const key of Object.keys(this)) {
         if (Object.prototype.hasOwnProperty.call(raw, key)) {
-          if (key === 'date') {
+          if (key === 'date' || key === 'updated') {
             const m = new Date(raw[key] as string)
 
             const translateMonth = `settings.months[${m.getMonth()}]`

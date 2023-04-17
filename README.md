@@ -56,3 +56,6 @@ Aurora is a next generation theme using Aurora colours and UI elements. It give 
 - Edit your code or just build
 - Run `yarn run build`
 - Replace `layout`, `scripts` and `source` folder to `hexo/node_modules/hexo-theme-aurora`
+
+### 🔗 Reference
+- Svg icon: https://www.svgrepo.com/collection/minimal-ui-icons
