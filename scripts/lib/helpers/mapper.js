@@ -65,6 +65,8 @@ function authorAttributes(author) {
 
 function socialMapper(socials) {
   return {
+    facebook: socials.facebook || '',
+    youtube: socials.youtube || '',
     github: socials.github || '',
     twitter: socials.twitter || '',
     stackoverflow: socials.stackoverflow || '',

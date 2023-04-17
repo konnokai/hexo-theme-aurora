@@ -273,6 +273,8 @@ export class Theme implements ObTheme {
 }
 
 export class Social {
+  facebook = ''
+  youtube = ''
   github = ''
   twitter = ''
   stackoverflow = ''

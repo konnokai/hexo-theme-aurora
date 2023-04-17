@@ -12,6 +12,26 @@
     "
   >
     <a
+      :href="socials.facebook"
+      target="_blank"
+      ref="facebook"
+      v-if="socials.facebook"
+    >
+      <li class="diamond-clip-path diamond-icon">
+        <svg-icon icon-class="facebook" class="fill-current" />
+      </li>
+    </a>
+    <a
+      :href="socials.youtube"
+      target="_blank"
+      ref="youtube"
+      v-if="socials.youtube"
+    >
+      <li class="diamond-clip-path diamond-icon">
+        <svg-icon icon-class="youtube" class="fill-current" />
+      </li>
+    </a>
+    <a
       :href="socials.github"
       target="_blank"
       ref="github"
