@@ -80,8 +80,8 @@
               >
                 {{ post.author.name }}
               </strong>
-              {{ t('settings.shared-on') }} {{ t(post.date.month) }}
-              {{ post.date.day }}, {{ post.date.year }}
+              {{ t('settings.shared-on') }} {{ post.date.year }},
+              {{ t(post.date.month) }} {{ post.date.day }}
             </span>
           </div>
         </div>

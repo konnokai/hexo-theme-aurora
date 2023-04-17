@@ -25,7 +25,7 @@
             <div class="timeline-marker"></div>
             <div class="timeline-content">
               <h2 class="timeline-title">
-                {{ t(posts.month) }} {{ posts.year }}
+                {{ posts.year }}, {{ t(posts.month) }}
               </h2>
             </div>
           </li>
@@ -36,8 +36,8 @@
           >
             <div class="timeline-info">
               <span>
-                {{ t(post.date.month) }} {{ post.date.day }},
-                {{ post.date.year }}
+                {{ post.date.year }}, {{ t(post.date.month) }}
+                {{ post.date.day }}
               </span>
             </div>
             <div class="timeline-marker"></div>
