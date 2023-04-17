@@ -89,7 +89,13 @@
             class="post-stats"
             v-if="post.count_time.symbolsTime && post.date"
           >
-            <span>
+            <span
+              v-if="
+                post.date.year != post.updated.year ||
+                post.date.month != post.updated.month ||
+                post.date.day != post.updated.day
+              "
+            >
               <svg-icon icon-class="setting" style="stroke: white" />
               <span class="pl-2 opacity-70">
                 {{ t('settings.updated-on') }} {{ post.updated.year }},
