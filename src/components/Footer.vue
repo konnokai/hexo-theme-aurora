@@ -58,6 +58,23 @@
               .
             </li>
           </ul>
+          <ul v-if="themeConfig.plugins.busuanzi.enable">
+            <li>
+              <span id="busuanzi_container_site_pv">
+                <svg-icon icon-class="eye" class="mr-1 text-lg inline-block" />
+                <span id="busuanzi_value_site_pv" />
+              </span>
+            </li>
+            <li>
+              <span id="busuanzi_container_site_uv">
+                <svg-icon
+                  icon-class="people"
+                  class="mr-1 text-lg inline-block"
+                />
+                <span id="busuanzi_value_site_uv"></span>
+              </span>
+            </li>
+          </ul>
         </div>
         <div
           class="
