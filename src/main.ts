@@ -39,5 +39,5 @@ console.log(
   '%c Aurora is developed by TriDiamond and modify by Konnokai%c',
   'background:#24272A; color:#73ddd7',
   '',
-  'https://github.com/auroral-ui/hexo-theme-aurora'
+  'https://github.com/konnokai/hexo-theme-aurora'
 )
